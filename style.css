@@ -1,0 +1,109 @@
+.container {
+	width: 640px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	border: 1px solid #2053E9;
+	border-radius: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	position: relative;
+    left: 275px;
+    top: 25px;
+}
+
+.title {
+	/* text-align: center; */
+	margin: 50px 0 30px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #1C55E9;
+}
+
+input {
+	padding: 15px;
+	margin-top: 20px;
+	width: 480px;
+	border: 1px solid #2053E9;
+	font-size: 20px;
+}
+
+input::placeholder {
+	color: #bbb;
+}
+
+button {
+	font-size: 26px;
+	color: #fff;
+	background-color: #2053E9;
+	border: 0;
+	margin: 50px 0 70px;
+	padding: 24px 40px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	outline: none;
+}
+
+.invalid {
+	color: red;
+	opacity: 0;
+	/* transform: translate(-170px); */
+	align-self: flex-start;
+	padding-left: 63px;
+}
+
+.visible {
+	opacity: 1;
+}
+
+.center {
+	padding-left: 116px;
+}
+
+#input-birthday {
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width: 376px) {
+	.container {
+		width: 100%;
+	}
+
+	input {
+		width: 80%;
+	}
+
+	button {
+		width: 70%;
+		font-size: 15px;
+	}
+
+	img {
+		left: 140px;
+	}
+
+	.center {
+		padding-left: 33px;
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.container {
+		width: 100%;
+	}
+
+	input {
+		width: 80%;
+	}
+
+	button {
+		width: 70%;
+		font-size: 15px;
+	}
+
+
+}
